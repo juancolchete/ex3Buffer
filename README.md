@@ -1,23 +1,27 @@
-Exercício 2
+Exercício 3
 
-Neste exercício, você irá praticar conceitos básicos de programação em Motoko. Siga as instruções abaixo para desenvolver um DAPP simples, focado apenas no backend (não é necessário frontend).
+Neste exercício, você irá praticar o uso de Buffers em Motoko, uma estrutura de dados dinâmica e poderosa para armazenar e manipular coleções de elementos. O objetivo é criar um DAPP simples para gerenciar uma lista de pessoas, utilizando as funcionalidades básicas da linguagem Motoko, focado apenas no backend (não é necessário frontend).
 
 Instruções:
 Declaração de Variáveis
 
-    Declare uma variável do tipo Nat chamada numero1 e inicialize-a com o valor 10.
+    Declare uma variável do tipo Buffer chamada pessoas que irá armazenar itens do tipo Text.
 
-    Declare uma variável do tipo Int chamada numero2 e inicialize-a com o valor 20.
+Função para Adicionar Pessoas
 
-    Declare uma variável do tipo Text e inicialize-a com o valor "Meu primeiro Dapp".
+    Crie uma função chamada adicionarPessoas.
 
-Funções Aritméticas
+    Esta função deve receber um parâmetro do tipo Text chamado nomePessoa.
 
-    Crie uma função chamada somar. Esta função deve receber dois números do tipo Nat, somá-los e retornar o resultado da soma.
+    A função não deve retornar nenhum valor.
 
-    Crie uma função chamada subtrair. Esta função deve receber dois números do tipo Nat, subtraí-los e retornar o resultado da subtração.
+Função para Listar Pessoas
 
-    Crie uma função chamada multiplicar. Esta função deve receber dois números do tipo Nat, multiplicá-los e retornar o resultado da multiplicação.
+    Crie uma função chamada listarPessoas.
+
+    Esta função não deve receber parâmetros.
+
+    Ela deve retornar um Array contendo a lista de nomes (do tipo Text) adicionados ao Buffer pessoas.
 
 Publicação do DAPP
 
@@ -27,7 +31,8 @@ Publicação do DAPP
 
 Dicas:
 
+    Utilize a biblioteca Buffer do Motoko para manipular a lista de pessoas.
     Certifique-se de que o código está bem organizado e comentado.
     Teste as funções localmente antes de publicar o DAPP. Utilize o comando dfx deploy para gerar o Dapp localmente, e utilize a URL correspondente a interface de backend para realizar os testes em um navegador web.
 
-Este exercício é uma ótima oportunidade para consolidar seus conhecimentos em Motoko e se familiarizar com o desenvolvimento de DAPPs na ICP. Boa sorte e bom código!
+Este exercício é uma ótima oportunidade para consolidar seus conhecimentos em Motoko e se familiarizar com o uso de Buffers no desenvolvimento de DAPPs. Boa sorte e bom código!

@@ -1,18 +1,18 @@
 {
   "canisters": {
-    "hello_backend": {
-      "main": "src/hello_backend/main.mo",
+    "math_backend": {
+      "main": "src/math_backend/main.mo",
       "type": "motoko"
     },
-    "hello_frontend": {
+    "math_frontend": {
       "dependencies": [
-        "hello_backend"
+        "math_backend"
       ],
       "source": [
-        "src/hello_frontend/dist"
+        "src/math_frontend/dist"
       ],
       "type": "assets",
-      "workspace": "hello_frontend"
+      "workspace": "math_frontend"
     }
   },
   "defaults": {
